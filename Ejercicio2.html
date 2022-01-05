@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio nº2 M3U4</title>
+</head>
+<body>
+    <textarea id="area"></textarea> <br>
+    <button id="boton"> contar caracteres</button>
+
+    <script>
+        
+        boton.addEventListener('click', function(){
+            var texto = document.getElementById("area").value;
+            contar = texto.length;
+            alert('El nº de caracteres es de ' + contar);
+
+        })
+     </script>
+
+     <!-- AYUDAMEMORIA:
+
+    Al crear el evento "click" sobre el boton, invocamos a la funcion, la cual va a seleccionar el id del textarea con la variable texto. Entonces agrego otra variable (contar) la cual va a ser igual al largo(length) del texto seleccionado.
+    por ultimo, dentro de la funcion hay establecer un alerta que de devuelva el valor de la variable contar.
+     -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var alumnos = [{
+              nombre: 'Juan Gomez',
+                nota: 7
+            }, {
+              nombre: 'Pedro Rodriguez',
+                nota: 4
+            }, {
+              nombre: 'Roxana García',
+                nota: 8
+            }, {
+              nombre: 'Luciano Lopez',
+            nota: 5
+            }, {
+              nombre: 'Fernanda Gimenez',
+            nota: 6
+            }, {
+              nombre: 'Florencia Martinez',
+            nota: 10
+            }, {
+              nombre: 'Raul Sanchez',
+            nota: 7
+            }, {
+              nombre: 'Sandra Figueroa',
+            nota: 8
+            }
+        ];
+
+
+
+const aprobados = alumnos.filter(n => n.nota>= 7);
+
+console.log('Los alumnos aprobados son: ', aprobados);
+    </script>
+    
+    <!-- AYUDAMEMORIA:
+    En la funcion .filter se reciben 3 parametros: el elemento, el subindice( del elemento dentro del array) y el propio array.
+
+    Entonces definimos una cons y sus valores van a estar dados acorde a si se cumple la condicion dentro del metodo filter.
+
+    Si la condicion se cumple (es verdadera), el elemento vinculado a ese valor se va a incluir dentro de la variable. 
+
+    Si la funcion devuelve un falso, ese valor se descarta.
+
+    nota: podriamos decir que cada objeto dentro del array alumnos, es igual al primer parametro (el elemento), dentro de la funcion .filter.
+
+    Entonces comenzamos definiendo la variable (aprobados), que va a ser = al array alumnos, y pedimos que cree un nuevo array agregandole .filter. 
+    
+    Dentro del filter, definimos el primer parametro (el elemento) asignandole una letra o nombre (en este caso la letra "n"), y vamos a pedirle a este método que retorne verdadero (=>), si se cumple la condicion que el valor de "nota" dentro del elemento "n" es mayor o igual a 7 ( n.nota>=7 ).
+
+    Una vez hecho esto, mediante un document.write o console.log, de la variable aprobados, pedimos que nos muestre el nuevo array con los elementos cuyos valores cumplen con la condicion establecida dentro del filter.  -->
+
+
+    
+</body>
+</html>

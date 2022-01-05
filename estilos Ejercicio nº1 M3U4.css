@@ -1,0 +1,64 @@
+.contenedor{
+    background-color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: black;
+    border-width: medium;
+    border-style: double;
+}
+
+.caja1{
+    background-color: limegreen;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+}
+
+.caja2{
+    background-color: lightseagreen;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+}
+
+.caja3{
+    background-color: firebrick;
+    height: 200px;    
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+}
+
+p:hover{
+    height: 195px;
+    width: 195px;
+    box-shadow: 0px 0px 0px;
+}
+
+p:active{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 5px 5px 10px black;
+}
